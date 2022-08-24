@@ -1,7 +1,7 @@
 <div id="top"></div>
 <!-- PROJECT LOGO -->
 <div align="center">
-  <a href="_">
+  <a href="https://github.com/jupyter-naas/data-product-template">
     <img src="assets/project_logo.png" alt="Logo">
   </a>
 
@@ -12,7 +12,7 @@
     <br />
     <br />
     <br />
-    <a href="" target="_blank">Request Demo</a>
+    <a href="https://github.com/jupyter-naas/data-product-template" target="_blank">Request Demo</a>
     ·
     <a href="https://github.com/jupyter-naas/data-product-template/issues/new" target="_blank">Report Bug</a>
     ·
