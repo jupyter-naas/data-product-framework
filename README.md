@@ -2,7 +2,7 @@
 <!-- PROJECT LOGO -->
 <div align="center">
   <a href="_">
-    <img src="project_logo.png" alt="Logo">
+    <img src="assets/project_logo.png" alt="Logo">
   </a>
 
   <h3 align="center">Data Product Template</h3>
