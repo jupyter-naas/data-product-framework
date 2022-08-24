@@ -1,0 +1,2 @@
+ipywidgets==7.6.5
+ipython==7.23.1
