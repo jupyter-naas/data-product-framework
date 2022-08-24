@@ -12,7 +12,7 @@
     <br />
     <br />
     <br />
-    <a href="https://github.com/jupyter-naas/data-product-template" target="_blank">Request Demo</a>
+    <a href="https://calendly.com/jeremyravenel" target="_blank">Request Demo</a>
     ·
     <a href="https://github.com/jupyter-naas/data-product-template/issues/new" target="_blank">Report Bug</a>
     ·
