@@ -1,2 +1,2 @@
-# inputs
-Any inputs (image, csv, html, credentials) used in "models"
+# Inputs
+Any inputs (image, csv, html, credentials, ...) used in "models".
