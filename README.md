@@ -1,8 +1,8 @@
 <div id="top"></div>
 <!-- PROJECT LOGO -->
 <div align="center">
-  <a href="https://github.com/jupyter-naas/data-product-template/">
-    <img src="https://landen.imgix.net/jtci2pxwjczr/assets/5ice39g4.png?w=160" alt="Logo Naas">
+  <a href="_">
+    <img src="project_logo.png" alt="Logo">
   </a>
 
   <h3 align="center">Data Product Template</h3>
