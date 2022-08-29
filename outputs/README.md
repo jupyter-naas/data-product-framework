@@ -1,2 +1,4 @@
 # Outputs
-Any data that would be exposed outside of naas platform (assets feature).
+
+## Description
+Any asset that would be exposed outside of the Naas server.

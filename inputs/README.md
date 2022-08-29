@@ -1,2 +1,4 @@
 # Inputs
-Any inputs (image, csv, html, credentials, ...) used in "models".
+
+## Description
+Any inputs (PNG, JPG, GIF, CSV,...) used in the /models folder.

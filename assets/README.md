@@ -1,2 +1,4 @@
 # Assets
-Any assets (image, gif, csv, diagrams, slide) related to the project scope of work.
+
+## Description
+Any assets (PNG, JPG, GIF, CSV, diagrams, slides) related to the project scope of work.
