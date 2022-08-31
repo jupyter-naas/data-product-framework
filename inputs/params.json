@@ -1,0 +1,10 @@
+{
+    "TICKER": "TSLA",
+    "DATE_FROM": -100,
+    "DATE_TO": "today",
+    "INTERVAL": "1d",
+    "DATA_POINT": 20,
+    "EMAIL_TO": [
+        "florent@naas.ai"
+    ]
+}
