@@ -1,0 +1,108 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vis-network@latest/styles/vis-network.css" type="text/css" />
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vis-network@latest/dist/vis-network.min.js"> </script>
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+
+<style type="text/css">
+
+        #mynetwork {
+            width: 100%;
+            height: 750px;
+            background-color: #222222;
+            border: 1px solid lightgray;
+            position: relative;
+            float: left;
+        }
+
+        
+
+        
+
+        
+</style>
+
+</head>
+
+<body>
+<div id = "mynetwork"></div>
+
+
+<script type="text/javascript">
+
+    // initialize global variables.
+    var edges;
+    var nodes;
+    var network; 
+    var container;
+    var options, data;
+
+    
+    // This method is responsible for drawing the graph, returns the drawn network
+    function drawGraph() {
+        var container = document.getElementById('mynetwork');
+        
+        
+
+        // parsing and collecting nodes and edges from the python
+        nodes = new vis.DataSet([{"color": "black", "font": {"color": "white"}, "id": 0, "label": "settings", "shape": "dot"}, {"color": "black", "font": {"color": "white"}, "id": 1, "label": "update", "shape": "dot"}, {"color": "blue", "font": {"color": "white"}, "id": 2, "label": "YahooFinance Create linechart", "shape": "dot"}, {"color": "blue", "font": {"color": "white"}, "id": 3, "label": "YahooFinance Get data from ticker", "shape": "dot"}, {"color": "blue", "font": {"color": "white"}, "id": 4, "label": "YahooFinance Send email prediction", "shape": "dot"}, {"color": "blue", "font": {"color": "white"}, "id": 5, "label": "pipeline", "shape": "dot"}, {"color": "blue", "font": {"color": "white"}, "id": 6, "label": "YahooFinance Predict data", "shape": "dot"}, {"color": "green", "font": {"color": "white"}, "id": 7, "label": "naas assets helper", "shape": "dot"}, {"color": "green", "font": {"color": "white"}, "id": 8, "label": "project helper", "shape": "dot"}, {"color": "green", "font": {"color": "white"}, "id": 9, "label": "utils", "shape": "dot"}, {"color": "green", "font": {"color": "white"}, "id": 10, "label": "network graph", "shape": "dot"}]);
+        edges = new vis.DataSet([{"from": 2, "to": 5}, {"from": 2, "to": 9}, {"from": 3, "to": 5}, {"from": 3, "to": 9}, {"from": 4, "to": 5}, {"from": 4, "to": 9}, {"from": 5, "to": 0}, {"from": 6, "to": 5}, {"from": 6, "to": 9}, {"from": 7, "to": 9}, {"from": 8, "to": 9}, {"from": 9, "to": 0}, {"from": 10, "to": 9}]);
+
+        // adding nodes and edges to the graph
+        data = {nodes: nodes, edges: edges};
+
+        var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+        
+        
+
+        
+
+        network = new vis.Network(container, data, options);
+	 
+        
+
+
+        
+
+        return network;
+
+    }
+
+    drawGraph();
+
+</script>
+</body>
+</html>

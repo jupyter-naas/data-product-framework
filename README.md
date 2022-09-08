@@ -7,11 +7,10 @@
 
   <h3 align="center">Data Product Template</h3>
 
-  <p align="center">
-    Project mission
-    <br />
-    <br />
-    <br />
+  <h4 align="center"><i>A blueprint create and run data products using Naas and Jupyter</i></h4>
+    <br>
+    <br>
+   <p align="center">
     <a href="https://calendly.com/jeremyravenel" target="_blank">Request Demo</a>
     ·
     <a href="https://github.com/jupyter-naas/data-product-template/issues/new" target="_blank">Report Bug</a>
@@ -19,8 +18,6 @@
     <a href="https://github.com/jupyter-naas/data-product-template/issues/new" target="_blank">Request Feature</a>
   </p>
 </div>
-
-
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -46,20 +43,25 @@
     <li><a href="#legal">Legal</a></li>
   </ol>
 </details>
+<br>
 
-<img src="assets/showcase.gif" alt="Gif Data Product Template">
+<img src="assets/network.png"
+     alt="network">
+
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+This project aims to demonstrate how to build and run a data product using Jupyter and Naas features, drivers and templates. 
+In this example, we want to send daily notifications by email to an audience that wants to follow the stock market price of a specific equity. 
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Built With
 
-* Jupyter Notebooks
-* Naas features
+- Jupyter 
+- Naas 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -68,15 +70,12 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
 ### Prerequisites
 
-* Create an account on [naas.ai](https://www.naas.ai/free-forever)
-* Create an account on ...
+- Create an account on [naas.ai](https://www.naas.ai/free-forever)
 
 ### Installation
 
-1. Step 1
-2. Step 2
-3. Step 3
-4. Step 4
+- Clone this repository
+- Follow the installation process in settings.ipynb file
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -84,9 +83,9 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 <!-- ROADMAP -->
 ## Roadmap
 
-- [x] V0
-- [ ] V1
-- [ ] V2
+- [x] V0 - the minimum viable product
+- [ ] V1 - improvements based on user feedback
+- [ ] V2 - enhancements based on marketing strategy
 
 
 See the [open issues](https://github.com/jupyter-naas/data-product-template/issues).
@@ -137,6 +136,7 @@ Project Authors:
 <!-- LEGAL -->
 ## Legal
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+This data product is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 
 <p align="right">(<a href="#top">back to top</a>)</p>

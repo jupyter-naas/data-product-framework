@@ -1,2 +1,2 @@
-ipywidgets==7.6.5
-ipython==7.23.1
+pandas==1.2.4
+pyvis==0.2.1
