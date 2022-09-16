@@ -1,106 +1,81 @@
-<div id="top"></div>
-<!-- PROJECT LOGO -->
-<div align="center">
-  <a href="https://github.com/jupyter-naas/data-product-template">
-    <img src="assets/project_logo.png" alt="Logo">
-  </a>
+![Naas.ai - Open Source Data Platform](assets/naas-banner.jpeg)
 
-  <h3 align="center">Data Product Template</h3>
+# Naas - Data Product Template
 
-  <h4 align="center"><i>A blueprint create and run data products using Naas and Jupyter</i></h4>
-    <br>
-    <br>
-   <p align="center">
-    <a href="https://calendly.com/jeremyravenel" target="_blank">Request Demo</a>
-    ·
-    <a href="https://github.com/jupyter-naas/data-product-template/issues/new" target="_blank">Report Bug</a>
-    ·
-    <a href="https://github.com/jupyter-naas/data-product-template/issues/new" target="_blank">Request Feature</a>
-  </p>
-</div>
+Naas is a low-code open source data platform that allows anyone touching data (business analysts, scientists and engineers) to create powerful data products combining automation, analytics and AI from the comfort of their [Jupyter Notebooks](https://jupyter.org/).
 
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-    <li><a href="#legal">Legal</a></li>
-  </ol>
-</details>
-<br>
+With its open source distribution model, Naas enforces visible source code, versionning and allow you to create custom logics. Naas's low-code based approach makes it highly versatile, enabling you to built almost everything.
 
-<img src="assets/network.png"
-     alt="network">
+The platform is structured around 3 low-code layers: 
+- Templates enable the user to create automated data jobs in minutes, and are the building blocks of data products
+- Drivers act as connectors to push and/or pull data from databases, APIs, and Machine Learning algorithms and more
+- Features transform Jupyter in a production ready environment with scheduling, asset sharing, and notifications
+
+Try Naas for free using -- Naas cloud -- a stable environment, in your browser.
+
+## How Does This Repository Works?
+
+This repository is a boilerplate for anyone who wish to develop a data product using Naas.
+
+It is structured as follows: 
+- `/assets` folder to store any PNG, JPG, GIF, CSV, diagrams, slides related to the documentation of the product
+- `/inputs` folder to store the parameters and any other files needed (data, referential) to run  used in the /models folder
+- `/models` folder to store any files that transform inputs into outputs (notebook, python, SQL files)
+- `/outputs` folder to store all the files that would be exposed outside of the Naas server
+- `/utils` folder to store all common functions used accross files
+- `/requiremets.txt` file to list out all the packages and dependencies
+- `/settings.ipynb` file to run the product on a Naas server 
+- `/update.ipynb` file to pull this repository again
 
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
 
-This project aims to demonstrate how to build and run a data product using Jupyter and Naas features, drivers and templates. 
-In this example, we want to send daily notifications by email to an audience that wants to follow the stock market price of a specific equity. 
+## About This Data Product
 
+![Naas.ai Email](assets/mail.gif)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+This Data Product Template simulates a very simple use case where a stock market data analyst needs to send out report every day at 9 AM to his manager. The email contains:
+- the current stock value of a specific stock (TSLA in this example),
+- the variation vs the previous day but also projected stock value using basic ML algorithms
+- a chart in PNG inserted in the body of the email 
+- a call-to-action to open view the chart dynamically using HTML inside the browser
+- the source data in excel for further exploration 
 
 ### Built With
 
-- Jupyter 
-- Naas 
+* YahooFinance data
+* Jupyter Notebooks
+* Naas
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-<!-- GETTING STARTED -->
-## Getting Started
+## Documentation
 
 ### Prerequisites
 
-- Create an account on [naas.ai](https://www.naas.ai/free-forever)
+* Create an account on [naas.ai](https://www.naas.ai/free-forever)
 
 ### Installation
 
-- Clone this repository
-- Follow the installation process in settings.ipynb file
+Follow the [settings.ipynb](settings.ipynb) notebook steps.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-<!-- ROADMAP -->
 ## Roadmap
 
-- [x] V0 - the minimum viable product
-- [ ] V1 - improvements based on user feedback
-- [ ] V2 - enhancements based on marketing strategy
+- [x] V0 - simple version with only one ticker 
+- [ ] V1 - multiple tickers (portfolio) input and an dashboard app available on the web
+- [ ] V2 - multiple KPIs analysis to arbitrate investment between different tickers
 
 
-See the [open issues](https://github.com/jupyter-naas/data-product-template/issues).
+## Support
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+If you have problems or questions please open an issue, we will then try to help you asap:
+
+[Open an issue](https://github.com/jupyter-naas/data-product-template/issues).
 
 
-
-<!-- CONTRIBUTING -->
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Contributions are welcomed.
 
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
+Don't forget to give the project a star.
 
 1. Create an account on [naas.ai](https://www.naas.ai/free-forever)
 2. Clone [the repository](https://github.com/jupyter-naas/data-product-template) on your engine 
@@ -109,20 +84,13 @@ Don't forget to give the project a star! Thanks again!
 4. Push to the Branch
 5. Open a Pull Request
 
-<p align="right">(<a href="#top">back to top</a>)</p>
 
+## Product Owners
 
-<!-- CONTACT -->
-## Contact
-
-Project Authors: 
 * [Florent Ravenel](https://www.linkedin.com/in/florent-ravenel/) - florent@naas.ai
 * [Jeremy Ravenel](https://www.linkedin.com/in/ACoAAAJHE7sB5OxuKHuzguZ9L6lfDHqw--cdnJg/) - jeremy@naas.ai
 
-<p align="right">(<a href="#top">back to top</a>)</p>
 
-
-<!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
 * [Awesome Notebooks](https://github.com/jupyter-naas/awesome-notebooks)
@@ -130,13 +98,6 @@ Project Authors:
 * [Naas](https://github.com/jupyter-naas/naas)
 
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-<!-- LEGAL -->
 ## Legal
 
-This data product is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-
-<p align="right">(<a href="#top">back to top</a>)</p>
+This project is licensed under AGPL-3.0
