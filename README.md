@@ -1,4 +1,4 @@
-![Naas.ai - Open Source Data Platform](assets/naas-banner.jpeg)
+![Naas.ai - Open Source Data Platform](assets/project_logo.png)
 
 # Naas - Data Product Template
 
