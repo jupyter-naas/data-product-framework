@@ -1,6 +1,6 @@
 ![Naas.ai - Open Source Data Platform](assets/project_logo.png)
 
-# Naas - Data Product Template
+# Naas - Data Product Framework
 
 Naas is a low-code open source data platform that allows anyone touching data (business analysts, scientists and engineers) to create powerful data products combining automation, analytics and AI from the comfort of their [Jupyter Notebooks](https://jupyter.org/).
 
@@ -22,6 +22,7 @@ It is structured as follows:
 - `/inputs` folder to store the parameters and any other files needed (data, referential) to run  used in the /models folder
 - `/models` folder to store any files that transform inputs into outputs (notebook, python, SQL files)
 - `/outputs` folder to store all the files that would be exposed outside of the Naas server
+- `/tests` folder to store all tests to be performed before production
 - `/utils` folder to store all common functions used accross files
 - `/requiremets.txt` file to list out all the packages and dependencies
 - `/settings.ipynb` file to run the product on a Naas server 
@@ -33,16 +34,14 @@ It is structured as follows:
 
 ![Naas.ai Email](assets/mail.gif)
 
-This Data Product Template simulates a very simple use case where a stock market data analyst needs to send out report every day at 9 AM to his manager. The email contains:
-- the current stock value of a specific stock (TSLA in this example),
-- the variation vs the previous day but also projected stock value using basic ML algorithms
-- a chart in PNG inserted in the body of the email 
-- a call-to-action to open view the chart dynamically using HTML inside the browser
-- the source data in excel for further exploration 
+This Data Product Framework is a boilerplate to create powerfull Data Products in your company.
+1. Create your organization on GitHub
+2. Use this template to kick start your Data Product
+3. Start bringing value in your company
+
 
 ### Built With
 
-* YahooFinance data
 * Jupyter Notebooks
 * Naas
 
@@ -58,9 +57,8 @@ Follow the [settings.ipynb](settings.ipynb) notebook steps.
 
 ## Roadmap
 
-- [x] V0 - simple version with only one ticker 
-- [ ] V1 - multiple tickers (portfolio) input and an dashboard app available on the web
-- [ ] V2 - multiple KPIs analysis to arbitrate investment between different tickers
+- [x] V0 - simple boilerplate with naas pipeline feature
+- [ ] V1 - add naas space feature to create powerful dashboard
 
 
 ## Support
@@ -89,6 +87,7 @@ Don't forget to give the project a star.
 
 * [Florent Ravenel](https://www.linkedin.com/in/florent-ravenel/) - florent@naas.ai
 * [Jeremy Ravenel](https://www.linkedin.com/in/ACoAAAJHE7sB5OxuKHuzguZ9L6lfDHqw--cdnJg/) - jeremy@naas.ai
+* [Maxime Jublou](https://www.linkedin.com/in/maximejublou/) - maxime@naas.ai
 
 
 ## Acknowledgments
@@ -96,6 +95,7 @@ Don't forget to give the project a star.
 * [Awesome Notebooks](https://github.com/jupyter-naas/awesome-notebooks)
 * [Naas Drivers](https://github.com/jupyter-naas/drivers)
 * [Naas](https://github.com/jupyter-naas/naas)
+* [Naas Data Product](https://github.com/jupyter-naas/naas-data-product)
 
 
 ## Legal
