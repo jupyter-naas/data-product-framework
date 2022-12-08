@@ -5,6 +5,6 @@
     "INTERVAL": "1d",
     "DATA_POINT": 20,
     "EMAIL_TO": [
-        "florent@naas.ai"
+        "hello@naas.ai"
     ]
 }
