@@ -4,3 +4,9 @@
 # Data
 .csv
 .xlsx
+
+# Models
+models/pipeline_executions
+
+# Outputs
+outputs
