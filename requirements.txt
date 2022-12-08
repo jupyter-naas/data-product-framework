@@ -1,2 +1,1 @@
-pandas==1.2.4
-pyvis==0.2.1
+naas_data_product
