@@ -1,4 +1,4 @@
 # Assets
 
 ## Description
-Any assets (PNG, JPG, GIF, CSV, diagrams, slides) related to the project scope of work.
+The /assets folder stores any PNG, JPG, GIF, CSV, diagrams, or slides related to the documentation of the product.
