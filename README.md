@@ -1,86 +1,120 @@
 ![Naas.ai - Open Source Data Platform](assets/project_logo.png)
 
-# Naas - Data Product Framework
+# Naas Data Product Framework
 
-Naas is a low-code open source data platform that allows anyone touching data (business analysts, scientists and engineers) to create powerful data products combining automation, analytics and AI from the comfort of their [Jupyter Notebooks](https://jupyter.org/).
+Naas is a low-code open source data platform that enables anyone working with data, including business analysts, scientists, and engineers, to easily create powerful data products combining automation, analytics, and AI from the comfort of their Jupyter notebooks. With its open source distribution model, Naas ensures visible source code and versioning, and allows you to create custom logic.
 
-With its open source distribution model, Naas enforces visible source code, versionning and allow you to create custom logics. Naas's low-code based approach makes it highly versatile, enabling you to built almost everything.
+The platform is structured around three low-code layers:
 
-The platform is structured around 3 low-code layers: 
-- Templates enable the user to create automated data jobs in minutes, and are the building blocks of data products
-- Drivers act as connectors to push and/or pull data from databases, APIs, and Machine Learning algorithms and more
-- Features transform Jupyter in a production ready environment with scheduling, asset sharing, and notifications
+- **Templates** enable users to create automated data jobs in minutes, and are the building blocks of data products.
+- **Drivers** act as connectors, allowing you to push and/or pull data from databases, APIs, and machine learning algorithms, and more.
+- **Features** transform Jupyter notebooks into a production-ready environment, with features such as scheduling, asset sharing, and notifications.
 
-Try Naas for free using -- Naas cloud -- a stable environment, in your browser.
+You can try Naas for free using Naas Cloud, a stable environment that runs in your browser.
 
-## How Does This Repository Works?
+## **How Does It Work?**
 
-This repository is a boilerplate for anyone who wish to develop a data product using Naas.
+This repository is a boilerplate for anyone who wishes to develop a data product using Naas. It is structured as follows:
 
-It is structured as follows: 
-- `/assets` folder to store any PNG, JPG, GIF, CSV, diagrams, slides related to the documentation of the product
-- `/inputs` folder to store the parameters and any other files needed (data, referential) to run  used in the /models folder
-- `/models` folder to store any files that transform inputs into outputs (notebook, python, SQL files)
-- `/outputs` folder to store all the files that would be exposed outside of the Naas server
-- `/tests` folder to store all tests to be performed before production
-- `/utils` folder to store all common functions used accross files
-- `/requiremets.txt` file to list out all the packages and dependencies
-- `/settings.ipynb` file to run the product on a Naas server 
-- `/update.ipynb` file to pull this repository again
+- The **`/assets`** folder stores any PNG, JPG, GIF, CSV, diagrams, or slides related to the documentation of the product.
+- The **`/inputs`** folder stores the parameters and any other files needed (data, referential) to run the files in the **`/models`** folder.
+    - **Referentials**: This subfolder should contain any reference data that is needed to run the models in the **`/models`** folder. This may include data dictionaries, lookup tables, or other types of reference data.
+    - **Mappings**: This subfolder should contain any mapping files that are needed to run the models in the **`/models`** folder. These may include files that define how data fields should be transformed or combined.
+    - **Rules**: This subfolder should contain any rule files that are needed to run the models in the **`/models`** folder. These may include files that define how data should be filtered, aggregated, or otherwise processed.
+- The **`/models`** folder stores any files that transform inputs into outputs (notebook, Python, SQL files). It should be organized with the following structure:
+    - The **Bronze** category should contain models that have been trained on a limited dataset and have achieved relatively low accuracy. These models may be useful for initial testing and prototyping, but may not be suitable for use in production environments.
+    - The **Silver** category should contain models that have been trained on a larger dataset and have achieved moderate accuracy. These models may be suitable for use in certain production environments, but may not be the most accurate option available.
+    - The **Gold** category should contain the most accurate models that have been trained on the largest and most diverse dataset available. These models are suitable for use in the most demanding production environments and are the top choice for mission-critical tasks.
+    - The **Insights** category should contain any additional information or analysis related to the models in the Bronze, Silver, and Gold categories. This may include performance metrics, error analysis, and other useful insights.
+    - The **`__pipeline__.ipynb`** file is a special file that specifies the order in which the models in the Bronze, Silver, and Gold categories should be trained and evaluated. This file is used to automate the model selection process, ensuring that the most accurate model is always used for a given task.
+    - The **`IMO_template.ipynb`**
+     file contains a collection of templates for data preprocessing, model training, and evaluation. These templates can be used as a starting point for creating new models, and can be customized as needed to suit the specific requirements of your project.
+- The **`/outputs`** folder stores all the files that would be exposed outside of the Naas server.
+- The **`/tests`** folder stores all tests to be performed before production.
+- The **`/utils`** folder stores all common functions used across files.
+- The **`requirements.txt`** file lists all the packages and dependencies.
+- The **`settings.ipynb`** file runs the product on a Naas server.
+- The **`update.ipynb`** file pulls this repository again.
 
+## What Are The Benefits?
 
+Some benefits of the Naas Data Product Framework are:
 
-## About This Data Product
+- **Low-code approach**: The low-code nature of the Naas platform makes it easy for anyone, regardless of their technical background, to create powerful data products.
+- **Open source**: The open source distribution model of Naas ensures visible source code and versioning, and allows you to create custom logic.
+- **Jupyter integration**: Naas integrates seamlessly with Jupyter notebooks, allowing you to create data products from the comfort of your familiar environment.
+- **Versatility**: With its templates, drivers, and features, Naas is highly versatile and enables you to build almost anything.
+- **Cloud-based**: Naas Cloud, the stable environment provided by Naas, allows you to access the platform from anywhere with an internet connection.
 
-![Naas.ai Email](assets/mail.gif)
+Overall, the Naas Data Product Framework is a powerful tool for anyone looking to create data products that combine automation, analytics, and AI.
 
-This Data Product Framework is a boilerplate to create powerfull Data Products in your company.
-1. Create your organization on GitHub
-2. Use this template to kick start your Data Product
-3. Start bringing value in your company
+## Why a Data Product Development Framework Like Naas is Necessary?
 
+Just as web development frameworks like React.js help developers create web applications more efficiently by providing a set of standardized tools and components, data product development frameworks like Naas help data scientists and engineers create data products more efficiently by providing a set of standardized tools and components specifically designed for data processing, analytics, and AI.
 
-### Built With
+Some specific benefits of using a data product development framework like Naas include:
 
-* Jupyter Notebooks
-* Naas
+- **Standardized structure**: A data product development framework provides a standardized structure for organizing and developing data products, which can make it easier to develop, maintain, and scale data products.
+- **Pre-built components**: A data product development framework includes a set of pre-built components, such as data connectors and data transformation tools, which can save time and effort compared to building these components from scratch.
+- **Integration with other tools**: A data product development framework typically integrates with other tools and technologies commonly used in the data world, such as Jupyter notebooks and machine learning libraries, which can make it easier to build and deploy data products.
+- **Collaboration and sharing**: A data product development framework can make it easier for multiple people to collaborate and share data products within an organization, as it provides a consistent framework for development and documentation.
 
-## Documentation
+Overall, a data product development framework like Naas can provide a number of benefits to data scientists and engineers, including improved efficiency, integration with other tools, and the ability to collaborate and share data products within an organization.
 
-### Prerequisites
+## How Data Products And Asociatedd Contracts Can Create More Trust From End-User?
 
-* Create an account on [naas.ai](https://www.naas.ai/free-forever)
+A data product framework can help with defining data contracts and creating trust with end users in several ways:
 
-### Installation
+- **Standardized structure**: A data product framework provides a standardized structure for organizing and developing data products, which can make it easier to define clear and consistent data contracts. For example, if a data product is built using a framework that specifies how input and output data should be structured and documented, it can be easier for end users to understand how the data product works and what they can expect from it.
+- **Transparency**: Many data product frameworks are open source, which means that the source code is visible and can be reviewed by anyone. This transparency can help build trust with end users, as they can see exactly how the data product works and how it processes their data.
+- **Auditability**: A data product framework can also provide tools and processes for auditing and reviewing data products, which can help ensure that they are reliable and accurate. This can be especially important for data products that are used in mission-critical applications, as end users need to be confident that the data products are reliable and trustworthy.
 
-Follow the [settings.ipynb](settings.ipynb) notebook steps.
+Overall, a data product framework can help create trust with end users by providing a standardized and transparent structure for developing data products, and by providing tools and processes for auditing and reviewing the products to ensure their reliability.
 
-## Roadmap
+## **About This Repository**
 
-- [x] V0 - simple boilerplate with naas pipeline feature
-- [ ] V1 - add naas space feature to create powerful dashboard
+This Data Product Framework repository is a boilerplate to create powerful Data Products in your company. To get started:
 
+1. Create an organization on GitHub.
+2. Use this template to kickstart your Data Product.
+3. Start bringing value to your company.
 
-## Support
+## **Built With**
 
-If you have problems or questions please open an issue, we will then try to help you asap:
+- Jupyter Notebooks
+- Naas
 
-[Open an issue](https://github.com/jupyter-naas/data-product-template/issues).
+## **Documentation**
 
+### **Prerequisites**
 
-## Contributing
+- Create an account on naas.ai
 
-Contributions are welcomed.
+### **Installation**
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star.
+Follow the steps in the **`settings.ipynb`** notebook.
 
-1. Create an account on [naas.ai](https://www.naas.ai/free-forever)
-2. Clone [the repository](https://github.com/jupyter-naas/data-product-template) on your engine 
-2. Create your Feature Branch
-3. Commit your Changes
-4. Push to the Branch
-5. Open a Pull Request
+## **Roadmap**
+
+- V0: Simple boilerplate with Naas pipeline feature
+- V1: Add Naas space feature to create powerful dashboard
+
+## **Support**
+
+If you have problems or questions, please open an issue and we will try to help you as soon as possible.
+
+## **Contributing**
+
+Contributions are welcome. If you have a suggestion that would make this better, please fork the repository and create a pull request. You can also simply open an issue with the tag "enhancement". Don't forget to give the project a star.
+
+To contribute:
+
+1. Create an account on naas.ai.
+2. Clone the repository on your machine.
+3. Create a feature branch.
+4. Commit your changes.
+5. Push to the branch.
+6. Open a pull request.
 
 
 ## Product Owners
