@@ -1,5 +1,4 @@
 # Tests
 
 ## Description
-Any tests to be performed before production.
-
+The /tests folder stores all tests to be performed before production.
