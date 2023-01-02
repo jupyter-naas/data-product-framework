@@ -1,4 +1,4 @@
 # Inputs
 
 ## Description
-Any inputs (PNG, JPG, GIF, CSV,...) used in the /models folder.
+The /inputs folder stores the parameters and any other files needed (data, referential) to run the files in the /models folder.
