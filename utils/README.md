@@ -1,5 +1,6 @@
 # Utils
 
 ## Description
-Any common functions used accross files.
+The /utils folder stores all common functions used across files.
+
 
