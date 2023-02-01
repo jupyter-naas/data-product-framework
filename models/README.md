@@ -10,6 +10,8 @@ The /models folder stores any files that transform inputs into outputs (notebook
 The **__pipeline__** file is a special file that specifies the order in which the models in the Bronze, Silver, and Gold categories should be trained and evaluated.
 This file is used to automate the model selection process, ensuring that the most accurate model is always used for a given task.
 
+## Layers
+
 ### l1_bronze
 The Bronze layer should contain models that have been trained on a limited dataset and have achieved relatively low accuracy. These models may be useful for initial testing and prototyping, but may not be suitable for use in production environments.
 
