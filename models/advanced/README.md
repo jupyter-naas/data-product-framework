@@ -39,12 +39,14 @@ The schedulers folder is an essential component of your data management system. 
 
 By utilizing the schedulers folder, you can automate data-related tasks and ensure that your data is always up-to-date. This, in turn, can lead to better business decisions and improved operational efficiency.
 
+You can refer to [our documentation](https://docs.naas.ai/features/scheduler) on how to schedule your notebooks using `naas.scheduler` feature or use the templates provided in the Naas folder in our [awesome-notebooks repository](https://github.com/jupyter-naas/awesome-notebooks/tree/master/Naas).
+
 ### Webhooks
 
 The webhooks folder is another crucial component of your data management system. It stores pipeline files that can be triggered using the naas.webhook feature. With our webhook feature, you can build smaller pipelines that can be triggered inside a third-party tool or by a human by clicking on the naas link or using our Chrome extension. This allows end-users to have refreshed data without waiting for scheduled refreshing. Webhooks can have a response time below one minute or return a 500 error, which is the limit fixed by naas. This error won't stop the execution of your webhook, but it won't allow you to get the expected response.
 
 To address this issue, you can use the pipeline feature on.error to manage longer webhook execution and get the result of the execution by creating a status file that can store the webhook status. If you want to learn more about this feature, please contact florent@naas.ai.
 
-In conclusion, the schedulers and webhooks folders are crucial components of your data management system. By utilizing these features, you can automate data-related tasks, ensure that your data is always up-to-date, and make more informed business decisions.
+To learn more about how to use naas.webhook feature, you can refer to [our documentation](https://docs.naas.ai/features/webhook) or use the templates provided in the Naas folder in our [awesome-notebooks repository](https://github.com/jupyter-naas/awesome-notebooks/tree/master/Naas).
 
 

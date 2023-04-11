@@ -5,6 +5,7 @@ The webhooks folder is another crucial component of your data management system.
 
 To address this issue, you can use the pipeline feature on.error to manage longer webhook execution and get the result of the execution by creating a status file that can store the webhook status. If you want to learn more about this feature, please contact florent@naas.ai.
 
+To learn more about how to use naas.webhook feature, you can refer to [our documentation](https://docs.naas.ai/features/webhook) or use the templates provided in the Naas folder in our [awesome-notebooks repository](https://github.com/jupyter-naas/awesome-notebooks/tree/master/Naas).
 
 ## Notebooks
 

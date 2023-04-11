@@ -5,12 +5,13 @@ The schedulers folder is an essential component of your data management system. 
 
 By utilizing the schedulers folder, you can automate data-related tasks and ensure that your data is always up-to-date. This, in turn, can lead to better business decisions and improved operational efficiency.
 
+You can refer to [our documentation](https://docs.naas.ai/features/scheduler) on how to schedule your notebooks using `naas.scheduler` feature or use the templates provided in the Naas folder in our [awesome-notebooks repository](https://github.com/jupyter-naas/awesome-notebooks/tree/master/Naas).
 
 ## Notebooks
 
 ### __pipeline__.ipynb
 
-The **__pipeline__** file is a special file that specifies the order in which the models in the Bronze, Silver, and Gold categories should be trained and evaluated.
+The **__pipeline__** file is a special file that specifies the order in which the notebooks inside your layers should be trained and evaluated.
 This file is used to automate the model selection process, ensuring that the most accurate model is always used for a given task.
 
 ## Folder
