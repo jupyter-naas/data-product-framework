@@ -21,7 +21,8 @@ This repository is a boilerplate for anyone who wishes to develop a data product
     - **Referentials**: This subfolder should contain any reference data that is needed to run the models in the **`/models`** folder. This may include data dictionaries, lookup tables, or other types of reference data.
     - **Mappings**: This subfolder should contain any mapping files that are needed to run the models in the **`/models`** folder. These may include files that define how data fields should be transformed or combined.
     - **Rules**: This subfolder should contain any rule files that are needed to run the models in the **`/models`** folder. These may include files that define how data should be filtered, aggregated, or otherwise processed.
-- The **`/models`** folder stores any files that transform inputs into outputs (notebook, Python, SQL files). It should be organized with the following structure:
+- The **`/models/basic`** folder stores any files that transform inputs into outputs (notebook, Python, SQL files)
+- The **`/models/advanced`** folder stores any files that transform inputs into outputs (notebook, Python, SQL files). It should be organized with the following structure:
     - The **Bronze** category should contain models that have been trained on a limited dataset and have achieved relatively low accuracy. These models may be useful for initial testing and prototyping, but may not be suitable for use in production environments.
     - The **Silver** category should contain models that have been trained on a larger dataset and have achieved moderate accuracy. These models may be suitable for use in certain production environments, but may not be the most accurate option available.
     - The **Gold** category should contain the most accurate models that have been trained on the largest and most diverse dataset available. These models are suitable for use in the most demanding production environments and are the top choice for mission-critical tasks.
@@ -33,7 +34,7 @@ This repository is a boilerplate for anyone who wishes to develop a data product
 - The **`/tests`** folder stores all tests to be performed before production.
 - The **`/utils`** folder stores all common functions used across files.
 - The **`requirements.txt`** file lists all the packages and dependencies.
-- The **`settings.ipynb`** file runs the product on a Naas server.
+- The **`setup.ipynb`** file runs the product on a Naas server.
 - The **`update.ipynb`** file pulls this repository again.
 
 ## What Are The Benefits?
