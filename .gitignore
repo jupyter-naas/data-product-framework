@@ -4,9 +4,11 @@
 # Data
 .csv
 .xlsx
+.json
+.parquet
 
 # Models
-models/pipeline_executions
+pipeline_executions
 
 # Outputs
 outputs
