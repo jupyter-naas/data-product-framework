@@ -18,18 +18,9 @@ This repository is a boilerplate for anyone who wishes to develop a data product
 
 - The **`/assets`** folder stores any PNG, JPG, GIF, CSV, diagrams, or slides related to the documentation of the product.
 - The **`/inputs`** folder stores the parameters and any other files needed (data, referential) to run the files in the **`/models`** folder.
-    - **Referentials**: This subfolder should contain any reference data that is needed to run the models in the **`/models`** folder. This may include data dictionaries, lookup tables, or other types of reference data.
-    - **Mappings**: This subfolder should contain any mapping files that are needed to run the models in the **`/models`** folder. These may include files that define how data fields should be transformed or combined.
-    - **Rules**: This subfolder should contain any rule files that are needed to run the models in the **`/models`** folder. These may include files that define how data should be filtered, aggregated, or otherwise processed.
-- The **`/models/basic`** folder stores any files that transform inputs into outputs (notebook, Python, SQL files)
-- The **`/models/advanced`** folder stores any files that transform inputs into outputs (notebook, Python, SQL files). It should be organized with the following structure:
-    - The **Bronze** category should contain models that have been trained on a limited dataset and have achieved relatively low accuracy. These models may be useful for initial testing and prototyping, but may not be suitable for use in production environments.
-    - The **Silver** category should contain models that have been trained on a larger dataset and have achieved moderate accuracy. These models may be suitable for use in certain production environments, but may not be the most accurate option available.
-    - The **Gold** category should contain the most accurate models that have been trained on the largest and most diverse dataset available. These models are suitable for use in the most demanding production environments and are the top choice for mission-critical tasks.
-    - The **Insights** category should contain any additional information or analysis related to the models in the Bronze, Silver, and Gold categories. This may include performance metrics, error analysis, and other useful insights.
-    - The **`__pipeline__.ipynb`** file is a special file that specifies the order in which the models in the Bronze, Silver, and Gold categories should be trained and evaluated. This file is used to automate the model selection process, ensuring that the most accurate model is always used for a given task.
-    - The **`IMO_template.ipynb`**
-     file contains a collection of templates for data preprocessing, model training, and evaluation. These templates can be used as a starting point for creating new models, and can be customized as needed to suit the specific requirements of your project.
+- The **`/models`** folder stores any files that transform inputs into outputs (notebook, Python, SQL files)
+    - The **`__pipeline__.ipynb`** file is used to automate the model selection process, ensuring that the most accurate model is always used for a given task.
+    
 - The **`/outputs`** folder stores all the files that would be exposed outside of the Naas server.
 - The **`/tests`** folder stores all tests to be performed before production.
 - The **`/utils`** folder stores all common functions used across files.
