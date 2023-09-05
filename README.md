@@ -26,7 +26,6 @@ This repository is a boilerplate for anyone who wishes to develop a data product
 - The **`/utils`** folder stores all common functions used across files.
 - The **`requirements.txt`** file lists all the packages and dependencies.
 - The **`setup.ipynb`** file runs the product on a Naas server.
-- The **`update.ipynb`** file pulls this repository again.
 
 ## What Are The Benefits?
 
