@@ -1,3 +1,7 @@
+ℹ️ This project is currently deprecated, check the [abi repository](https://github.com/jupyter-naas/abi) to see our latest version of data product packaging.
+------
+ 
+
 ![Naas.ai - Open Source Data Platform](assets/project_logo.png)
 
 # Naas Data Product Framework
